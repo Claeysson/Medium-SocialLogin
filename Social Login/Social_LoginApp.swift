@@ -11,13 +11,17 @@ import Firebase
 @main
 struct Social_LoginApp: App {
     
+    private let authObject: AuthenticationObject
+    
     init() {
         FirebaseApp.configure()
+        authObject = AuthenticationObject()
     }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(authObject)
         }
     }
 }

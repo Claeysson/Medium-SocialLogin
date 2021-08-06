@@ -16,6 +16,10 @@
 		5B900EF026BD563700A4BF7F /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900EEF26BD563700A4BF7F /* Authentication.swift */; };
 		5B9F503626BD609100D6E09B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5B9F503526BD609100D6E09B /* FirebaseAuth */; };
 		5B9F503926BD620000D6E09B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5B9F503826BD620000D6E09B /* GoogleSignIn */; };
+		5B9F503C26BD69CD00D6E09B /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 5B9F503B26BD69CD00D6E09B /* FacebookLogin */; };
+		5B9F503E26BD69CD00D6E09B /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5B9F503D26BD69CD00D6E09B /* FacebookCore */; };
+		5B9F504026BD6AF800D6E09B /* Authentication+Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F503F26BD6AF800D6E09B /* Authentication+Apple.swift */; };
+		5B9F504226BD70F400D6E09B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F504126BD70F400D6E09B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,8 @@
 		5B900EEB26BD55D700A4BF7F /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
 		5B900EED26BD55FF00A4BF7F /* SignInButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonStyle.swift; sourceTree = "<group>"; };
 		5B900EEF26BD563700A4BF7F /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		5B9F503F26BD6AF800D6E09B /* Authentication+Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication+Apple.swift"; sourceTree = "<group>"; };
+		5B9F504126BD70F400D6E09B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,8 @@
 			files = (
 				5B9F503626BD609100D6E09B /* FirebaseAuth in Frameworks */,
 				5B9F503926BD620000D6E09B /* GoogleSignIn in Frameworks */,
+				5B9F503C26BD69CD00D6E09B /* FacebookLogin in Frameworks */,
+				5B9F503E26BD69CD00D6E09B /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +74,9 @@
 				5B900EDE26BD558900A4BF7F /* ContentView.swift */,
 				5B900EEB26BD55D700A4BF7F /* SignInButtonView.swift */,
 				5B900EEF26BD563700A4BF7F /* Authentication.swift */,
+				5B9F503F26BD6AF800D6E09B /* Authentication+Apple.swift */,
 				5B900EED26BD55FF00A4BF7F /* SignInButtonStyle.swift */,
+				5B9F504126BD70F400D6E09B /* GoogleService-Info.plist */,
 				5B900EE026BD558B00A4BF7F /* Assets.xcassets */,
 				5B900EE526BD558B00A4BF7F /* Info.plist */,
 				5B900EE226BD558B00A4BF7F /* Preview Content */,
@@ -101,6 +111,8 @@
 			packageProductDependencies = (
 				5B9F503526BD609100D6E09B /* FirebaseAuth */,
 				5B9F503826BD620000D6E09B /* GoogleSignIn */,
+				5B9F503B26BD69CD00D6E09B /* FacebookLogin */,
+				5B9F503D26BD69CD00D6E09B /* FacebookCore */,
 			);
 			productName = "Social Login";
 			productReference = 5B900ED926BD558900A4BF7F /* Social Login.app */;
@@ -132,6 +144,7 @@
 			packageReferences = (
 				5B9F503426BD609100D6E09B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				5B9F503726BD620000D6E09B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				5B9F503A26BD69CD00D6E09B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 5B900EDA26BD558900A4BF7F /* Products */;
 			projectDirPath = "";
@@ -149,6 +162,7 @@
 			files = (
 				5B900EE426BD558B00A4BF7F /* Preview Assets.xcassets in Resources */,
 				5B900EE126BD558B00A4BF7F /* Assets.xcassets in Resources */,
+				5B9F504226BD70F400D6E09B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +177,7 @@
 				5B900EF026BD563700A4BF7F /* Authentication.swift in Sources */,
 				5B900EDF26BD558900A4BF7F /* ContentView.swift in Sources */,
 				5B900EDD26BD558900A4BF7F /* Social_LoginApp.swift in Sources */,
+				5B9F504026BD6AF800D6E09B /* Authentication+Apple.swift in Sources */,
 				5B900EEE26BD55FF00A4BF7F /* SignInButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +385,14 @@
 				minimumVersion = 6.0.1;
 			};
 		};
+		5B9F503A26BD69CD00D6E09B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -382,6 +405,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5B9F503726BD620000D6E09B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
+		};
+		5B9F503B26BD69CD00D6E09B /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9F503A26BD69CD00D6E09B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		5B9F503D26BD69CD00D6E09B /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B9F503A26BD69CD00D6E09B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

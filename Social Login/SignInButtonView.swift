@@ -51,10 +51,6 @@ struct SignInButtons: View {
                     Spacer()
                 }.frame(maxWidth: .infinity)
             }.buttonStyle(AuthenticationButtonStyle(provider: .facebook))
-            Button(action: {}, label: {
-                Text("Continiue without an account")
-                    .foregroundColor(.blue)
-            })
         }.padding()
     }
 }
